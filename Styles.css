@@ -1,0 +1,32 @@
+body {
+    background-color: #C4EFF2;
+    padding: 0px;
+}
+
+h1 {
+    color: #14575C;
+    background-color: #82D3D9;
+    padding: 20px;
+}
+
+h2 {
+    color: #14575C;
+}
+
+p {
+    color: #14575C;
+}
+
+ul {
+    list-style: none;
+}
+li
+{
+    
+}
+
+nav 
+{
+    font-size: large;
+    padding: 20px;
+}
