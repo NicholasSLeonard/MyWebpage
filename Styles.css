@@ -7,10 +7,12 @@ h1 {
     color: #14575C;
     background-color: #82D3D9;
     padding: 20px;
+    text-align: center;
 }
 
 h2 {
     color: #14575C;
+    padding: 10px;
 }
 
 p {
@@ -19,14 +21,21 @@ p {
 
 ul {
     list-style: none;
+    float:none;
 }
 li
 {
-    
+    margin:10px;
+    display:inline-block;
 }
 
-nav 
+nav{
+    text-align: center;
+    display: inline;
+    font-size:20px;
+}
+footer
 {
     font-size: large;
-    padding: 20px;
+    color: #14575C;
 }
