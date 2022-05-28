@@ -4,24 +4,45 @@
 <head>
     <title>GamePage</title>
     <link rel="stylesheet" href="Styles.css">
+    <script>
+        let hacked = false;
+
+        function validateIsString(userInput, message) {
+            while (userInput % 1 == 0 || userInput == "NULL") {
+                userInput = prompt(message);
+            }
+            return userInput;
+        }
+
+        function hackUser(text) {
+            if (hacked) {
+                document.write(":))))) N0 text 4 u skrub. th4nks 4 y0ur B1tCoinz");
+            }
+            else {
+                document.write(text);
+            }
+        }
+
+    </script>
 </head>
 
 <body>
     <script>
-        let userName = prompt("What's your name?")
+        let userName = validateIsString(prompt("What's your name?"), "Please enter a name!");
 
         if (userName == "Admin") {
             document.write("Activating super special admin powers...")
         }
-        else if(userName == "NULL")
-        {
-            document.write("Welcome to the page Anon!")
-        }
         else {
             document.write("Welcome to the page ", userName, "!")
         }
+
+        hacked = confirm("Will you let me hack your computer?(Not legally binding)")
+
     </script>
-    <h1>Games!</h1>
+    <h1>
+        <script>hackUser("Games!")</script>
+    </h1>
     <section>
         <nav>
             <ul>
@@ -31,23 +52,26 @@
             </ul>
         </nav>
     </section>
-    <script>
-        confirm("Will you let me hack your computer?(Not legally binding)")
-    </script>
     <section>
         <h2>Caelins Games</h2>
         <ul>
             <li>
-                <img src="https://placekitten.com/150/200">
-                <p>Cool Game 1</p>
+                <img src="https://image.jeuxvideo.com/medias-sm/159542/1595423317-2836-jaquette-avant.png">
+                <p>
+                    <script>hackUser("Halo Infinite")</script>
+                </p>
             </li>
             <li>
-                <img src="https://placekitten.com/150/200">
-                <p>Cool Game 2</p>
+                <img src="https://upload.wikimedia.org/wikipedia/en/d/dd/Call_of_Duty_Warzone_cover.jpg">
+                <p>
+                    <script>hackUser("Call of Duty Warzone")</script>
+                </p>
             </li>
             <li>
-                <img src="https://placekitten.com/150/200">
-                <p>Cool Game 3</p>
+                <img src="https://i.ebayimg.com/images/g/G2UAAOSwewpe5Erb/s-l400.jpg">
+                <p>
+                    <script>hackUser("Light 2")</script>
+                </p>
             </li>
         </ul>
     </section>
@@ -55,24 +79,54 @@
         <h2>Nicks Games</h2>
         <ul>
             <li>
-                <img src="https://placekitten.com/150/200">
-                <p>Cool Game 1</p>
+                <img src="https://static-cdn.jtvnw.net/ttv-boxart/1742_IGDB-272x380.jpg">
+                <p>
+                    <script>hackUser("Supreme Commander")</script>
+                </p>
             </li>
             <li>
-                <img src="https://placekitten.com/150/200">
-                <p>Cool Game 2</p>
+                <img
+                    src="https://m.media-amazon.com/images/M/MV5BZTZjNTU0YTktOGUzMS00MmZiLWJkZmEtOGI3NGU0Yjk2MDlhXkEyXkFqcGdeQXVyMTI0MzA4NTgw._V1_.jpg">
+                <p>
+                    <script>hackUser("Rimworld")</script>
+                </p>
             </li>
             <li>
-                <img src="https://placekitten.com/150/200">
-                <p>Cool Game 3</p>
+                <img src="https://static-ie.gamestop.ie/images/products/278403/3max.jpg">
+                <p>
+                    <script>hackUser("Elden Ring")</script>
+                </p>
             </li>
         </ul>
     </section>
     <script>
         let userGame = prompt("What's your favorite game?");
         document.write(userGame, " is a great game too!")
+
+
+        let btn = document.createElement("button");
+        btn.innerHTML = "Rate Us";
+        btn.onclick = function () {
+            let score = -1;
+            while (score > 5 || score < 0 || score % 1 != 0) {
+                score = prompt("On a scale of 1-5 how would you rate us");
+            }
+
+
+
+            for (let i = 0; i < score; i++) {
+                let star = new Image(50, 50);
+                star.src = "https://www.dlf.pt/dfpng/middlepng/408-4085627_shandong-golden-stars-clip-art-gold-star-png.png";
+                document.body.appendChild(star);
+            }
+        };
+        document.body.appendChild(btn);
     </script>
+
 </body>
-<footer>©Nicholas Leonard</footer>
+<footer>
+    <script>hackUser("©Nicholas Leonard and Caelin Hargrave")
+    </script>
+</footer>
 
 </html>

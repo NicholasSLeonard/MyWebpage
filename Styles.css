@@ -21,21 +21,27 @@ p {
 
 ul {
     list-style: none;
-    float:none;
-}
-li
-{
-    margin:10px;
-    display:inline-block;
+    float: none;
 }
 
-nav{
+li {
+    margin: 10px;
+    display: inline-block;
+}
+
+nav {
     text-align: center;
     display: inline;
-    font-size:20px;
+    font-size: 20px;
 }
-footer
-{
+
+footer {
     font-size: large;
     color: #14575C;
+}
+
+img {
+    
+    width: 150px;
+    height: 200px;
 }
