@@ -7,9 +7,9 @@
     <script>
         let hacked = false;
 
-        function validateIsString(userInput, message) {
+        function validateIsString(userInput, failureMessage) {
             while (userInput % 1 == 0 || userInput == "NULL") {
-                userInput = prompt(message);
+                userInput = prompt(failureMessage);
             }
             return userInput;
         }
